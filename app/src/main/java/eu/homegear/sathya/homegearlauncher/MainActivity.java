@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         view.setWebViewClient(webViewClient);
         view.addJavascriptInterface(new WebAppInterface(this), "HomegearLauncher");
 
-        view.loadUrl(String.valueOf(R.string.homegear_url));
+        view.loadUrl(getResources().getString(R.string.homegear_url));
         /* Start Chrome
         Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.android.chrome");
         if (launchIntent != null) {

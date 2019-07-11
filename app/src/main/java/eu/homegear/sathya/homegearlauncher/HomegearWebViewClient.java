@@ -40,7 +40,7 @@ class HomegearWebViewClient extends WebViewClient {
                 mActivity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        view.loadUrl(String.valueOf(R.string.homegear_url));
+                        view.loadUrl(mActivity.getResources().getString(R.string.homegear_url));
                     }
                 });
             }
